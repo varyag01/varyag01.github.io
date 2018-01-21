@@ -5,14 +5,12 @@
 }
 /*стиль элемента прогресс*/
 .progress {
-		height: 45%;
-		width: 6px;
-		background: transparent;
-		border-top: 7px #FFDB4D solid;
-		border-left:1px solid  inherit;
-		border-right: 1px solid  inherit;
-		border-bottom:  4px solid  inherit;
-		position: absolute;
+	background: transparent;
+	border-top: 7px #FFDB4D solid;
+	border-left:1px solid  inherit;
+	border-right: 1px solid  inherit;
+	border-bottom:  4px solid  inherit;
+	position: absolute;
 }
 /*стиль элементов блока управления*/
 	/*Кнопки управления*/
@@ -50,10 +48,9 @@
 	height: 320px;
 }
 .progress {
+	height: 45%;
+	width: 6px;
 	margin: 13% 27%;
-}
-#ProgressUnit #AnimateButton, #ProgressUnit #HideButton {
-	margin-left: 30px;
 }
 /*позиционирование определенной кнопки (с именем 'Animate')*/
 #ProgressUnit #AnimateButton {
@@ -70,25 +67,28 @@
 }
 @media all and (orientation:portrait)  {
 #ProgressUnit {
-	width: 568px;
-	height: 320px;
+	width: 320px;
+	height: 568px;
 }
 .progress {
-	margin: 13% 27%;
+	height: 25%;
+	width: 3%;
+	margin: 20% 50%;
 }
-#ProgressUnit #AnimateButton, #ProgressUnit #HideButton {
-	margin-left: 30px;
-}
+
 /*позиционирование определенной кнопки (с именем 'Animate')*/
 #ProgressUnit #AnimateButton {
-	margin: 25% 60%;
+	margin-top: 118%;
+	margin-left: 45%;
 }
 /*позиционирование определенной кнопки (с именем 'Hide')*/
 #ProgressUnit #HideButton {
-	margin: 26% 60%;
+	margin-top: 123%;
+	margin-left: 45%;
 }
 /*позиционирование элемента, предназначенного для ввода значений*/
 #ProgressUnit #Value {
-	margin: 20% 60%;
+	margin-top: 106%;
+	margin-left: 45%;
 }
 }
