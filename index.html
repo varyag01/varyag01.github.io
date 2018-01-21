@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+<link rel="stylesheet" type="text/css" href="./ProgressUnit.css">
+</head>
+<body>
+	<div id='ProgressUnit'> <!--Сам блок (весь)-->
+		<div id='ControlUnit'> <!--Блок управления-->
+				<form >
+					<input type="text" id='Value' maxlength="3" >
+				</form>
+				<div id='AnimateButton' onclick='AnimateButton()'><!--Кнопка Анимации-->
+					<div id='AnimatCircleInButton'></div><!--Бегунок внутри кнопки анимации-->
+				</div>
+				<br><div id='HideButton' onclick='HideButton()'><!--Кнопка Скрытия ('Hide') анимационного блока-->
+					<div id='HideCircleInButton'></div><!--Бегунок внутри кнопки Скрытия ('Hide') анимационного блока-->
+				</div>
+		</div>
+	</div>
+	<script type="text/javascript" src='./script.js'></script>
+</body>
+</html>

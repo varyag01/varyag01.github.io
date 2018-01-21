@@ -1,0 +1,94 @@
+/*Все в одном блоке*/
+#ProgressUnit {
+	position: absolute;
+	border: 5px solid;
+}
+/*стиль элемента прогресс*/
+.progress {
+		height: 45%;
+		width: 6px;
+		background: transparent;
+		border-top: 7px #FFDB4D solid;
+		border-left:1px solid  inherit;
+		border-right: 1px solid  inherit;
+		border-bottom:  4px solid  inherit;
+		position: absolute;
+}
+/*стиль элементов блока управления*/
+	/*Кнопки управления*/
+#ProgressUnit #AnimateButton, #ProgressUnit #HideButton {
+	width: 40px;
+	height: 20px;
+	background: #4A4A4A;
+	border-radius: 10px;
+	position: absolute;
+}
+	/*бегунок кнопок управления*/
+#ProgressUnit #AnimateButton div, #ProgressUnit #HideButton div  {
+	width: 18px;
+	height: 18px;
+	background: #D8D8D8;
+	border-radius: 50%;
+	position: inherit;
+	margin: 1px 1px;
+}
+#ProgressUnit #Value {
+	background: #ffffff;
+	width: 38px;
+	height: 18px;
+	border-radius: 10px;
+	position: absolute;
+	outline: none;
+	border: 1px solid black;
+	text-align:center;
+}
+
+/*Далее адаптив под ориентацию*/
+@media all and (orientation:landscape) {
+	#ProgressUnit {
+	width: 568px;
+	height: 320px;
+}
+.progress {
+	margin: 13% 27%;
+}
+#ProgressUnit #AnimateButton, #ProgressUnit #HideButton {
+	margin-left: 30px;
+}
+/*позиционирование определенной кнопки (с именем 'Animate')*/
+#ProgressUnit #AnimateButton {
+	margin: 25% 60%;
+}
+/*позиционирование определенной кнопки (с именем 'Hide')*/
+#ProgressUnit #HideButton {
+	margin: 26% 60%;
+}
+/*позиционирование элемента, предназначенного для ввода значений*/
+#ProgressUnit #Value {
+	margin: 20% 60%;
+}
+}
+@media all and (orientation:portrait)  {
+#ProgressUnit {
+	width: 568px;
+	height: 320px;
+}
+.progress {
+	margin: 13% 27%;
+}
+#ProgressUnit #AnimateButton, #ProgressUnit #HideButton {
+	margin-left: 30px;
+}
+/*позиционирование определенной кнопки (с именем 'Animate')*/
+#ProgressUnit #AnimateButton {
+	margin: 25% 60%;
+}
+/*позиционирование определенной кнопки (с именем 'Hide')*/
+#ProgressUnit #HideButton {
+	margin: 26% 60%;
+}
+/*позиционирование элемента, предназначенного для ввода значений*/
+#ProgressUnit #Value {
+	margin: 20% 60%;
+}
+}
