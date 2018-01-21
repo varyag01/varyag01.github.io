@@ -92,3 +92,32 @@
 	margin-left: 45%;
 }
 }
+
+/*для смартфонов*/
+@media handheld and (orientation:portrait)  {
+#ProgressUnit {
+	width: 320px;
+	height: 568px;
+}
+.progress {
+	height: 25%;
+	width: 3%;
+	margin: 20% 50%;
+}
+
+/*позиционирование определенной кнопки (с именем 'Animate')*/
+#ProgressUnit #AnimateButton {
+	margin-top: 118%;
+	margin-left: 45%;
+}
+/*позиционирование определенной кнопки (с именем 'Hide')*/
+#ProgressUnit #HideButton {
+	margin-top: 123%;
+	margin-left: 45%;
+}
+/*позиционирование элемента, предназначенного для ввода значений*/
+#ProgressUnit #Value {
+	margin-top: 106%;
+	margin-left: 45%;
+}
+}
