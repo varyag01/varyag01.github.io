@@ -144,4 +144,13 @@ function valueInput() {
 		};
 	};
 }
-
+/*API*/
+var progress={
+	setValue: function() {value=arguments[0];fullProcent=arguments[0];stopAnimate();valueInput() },
+ 	setMod:function animated() {
+ 		if (arguments[0]=='animated'){
+ 			if(arguments[1]=='yes') {startAnimate()}
+ 			else if (arguments[1]=='') {stopAnimate()};
+ 		};
+ 	}
+};
