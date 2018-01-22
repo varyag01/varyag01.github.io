@@ -1,5 +1,5 @@
 /*API*/
-window.progress={
+var progress={
 	setValue: function() {value=arguments[0];fullProcent=arguments[0];stopAnimate();valueInput() },
  	setMod:function animated() {
  		if (arguments[0]=='animated'){
