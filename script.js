@@ -143,7 +143,7 @@ function valueInput() {
 			valueAnimInterval=setInterval(valueAnim,50);
 		};
 	};
-}
+};
 /*API*/
 var progress={
 	setValue: function() {value=arguments[0];fullProcent=arguments[0];stopAnimate();valueInput() },
@@ -154,3 +154,9 @@ var progress={
  		};
  	}
 };
+
+
+/*
+progress.setMod('animated','start')
+progress.setValue(75)
+*/
