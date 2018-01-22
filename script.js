@@ -154,9 +154,3 @@ var progress={
  		};
  	}
 };
-
-
-/*
-progress.setMod('animated','start')
-progress.setValue(75)
-*/
