@@ -1,3 +1,14 @@
+/*API*/
+window.progress={
+	setValue: function() {value=arguments[0];fullProcent=arguments[0];stopAnimate();valueInput() },
+ 	setMod:function animated() {
+ 		if (arguments[0]=='animated'){
+ 			if(arguments[1]=='yes') {startAnimate()}
+ 			else if (arguments[1]=='') {stopAnimate()};
+ 		};
+ 	}
+};
+
 var procent=60; /*Заранее заданный процент*/
 var ProgressUnit=document.getElementById('ProgressUnit');/*создание и определение переменной всего блока(во избежание повторения)*/
 var shadowColor='#EFEFEC'
@@ -143,14 +154,4 @@ function valueInput() {
 			valueAnimInterval=setInterval(valueAnim,50);
 		};
 	};
-};
-/*API*/
-window.progress={
-	setValue: function() {value=arguments[0];fullProcent=arguments[0];stopAnimate();valueInput() },
- 	setMod:function animated() {
- 		if (arguments[0]=='animated'){
- 			if(arguments[1]=='yes') {startAnimate()}
- 			else if (arguments[1]=='') {stopAnimate()};
- 		};
- 	}
 };
